@@ -1,7 +1,14 @@
--- --
+---
+socialImage: og-image.png
+socialDescription: Corban Pendrak's cybersecurity notes and writeups.
+---
+---
 
-This is Corban Pendrak's vault for cybersecurity resources and notes.
+This is Corban Pendrak's cybersecurity notes and writeups.
 
+> [!question]- Navigation
+>Click links to move around or use the graph. 
+>MOCs are lists of other notes/resources.
 # Modules
 - [[Hardware MOC]]
 - [[Linux MOC]]
@@ -10,7 +17,6 @@ This is Corban Pendrak's vault for cybersecurity resources and notes.
 - [[Programming MOC]]
 - [[Regular Expressions]]
 - [[HackTheBox Writeups]]
-
 
 > [!warning]- Fix backlinks (for Obsidian editing)
 > ```base

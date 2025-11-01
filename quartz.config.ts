@@ -14,14 +14,15 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "corbanpendrak.github.io",
+    baseUrl: "corbanpendrak.github.io/cybersecurity",
     ignorePatterns: ["**/private", "Templates", ".obsidian", "README.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Anta",
+      	title: "Anta",
+        header: "Nunito",
         body: "Nunito",
         code: "Google Sans Code",
       },
