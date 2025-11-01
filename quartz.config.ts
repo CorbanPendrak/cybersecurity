@@ -8,24 +8,22 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Corban's Cybersecurity Resources",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "corbanpendrak.github.io",
+    ignorePatterns: ["**/private", "Templates", ".obsidian", "README.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Anta",
+        body: "Nunito",
+        code: "Google Sans Code",
       },
       colors: {
         lightMode: {
@@ -34,10 +32,10 @@ const config: QuartzConfig = {
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          secondary: "#03fcd3",
+          tertiary: "#03fc94",
+          highlight: "rgba(3, 240, 252, 0.15)",
+          textHighlight: "#03f0fc88",
         },
         darkMode: {
           light: "#161618",
@@ -45,10 +43,10 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          secondary: "#03fcd3",
+          tertiary: "#03fc94",
+          highlight: "rgba(3, 240, 252, 0.15)",
+          textHighlight: "#03f0fc88",
         },
       },
     },
@@ -89,7 +87,13 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      Plugin.CustomOgImages({
+      	colorScheme: "darkMode",
+      	width: 1200,
+      	height: 630,
+      	excludeRoot: true,
+      	imageStructure: "preview-image.png",
+      }),
     ],
   },
 }
